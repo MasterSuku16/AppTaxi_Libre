@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "0xWI52iHtyDguoxPvJuvPsM0g6BeNeOTML8VR5bXIvU=",
+  "Source": "App_Taxi_BackEnd",
+  "BasePath": "_content/App_Taxi_BackEnd",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
