@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="mybackground">
+    <ion-buttons>
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Menu</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <center>
+    <div id="img">
+      <img class="img" src="{{RegisterDTO.profilePicture}}" width="110px" alt="">
+    </div>
+    <br>
+    <div class="mapa">
+      <div id="container"></div>
+      <app-origin-map> </app-origin-map>
+    </div>
+
+    <ion-button class="register" color="mybackground" (click)="RequestTrip()"><b>Pedir viaje</b></ion-button>
+    <app-navegation class="main"></app-navegation>
+  </center>
+
+</ion-content>

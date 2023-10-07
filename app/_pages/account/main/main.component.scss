@@ -1,0 +1,31 @@
+// ion-content.background{
+//     --background: url(/assets/images/fondoMejorado.png)0 0/100% 100% no-repeat;
+//     align-content: center;
+// }
+
+ion-content.background{
+    --background: url(/assets/images/curvas.png) no-repeat;
+    align-content: center;
+    //width: 500px;
+    //height: 400px;
+}
+
+app-navegation.main{
+        position: absolute;
+        /*El div será ubicado con relación a la pantalla*/
+        left: 0px;
+        /*A la derecha deje un espacio de 0px*/
+        right: 0px;
+        /*A la izquierda deje un espacio de 0px*/
+        bottom: -125px;
+        /*Abajo deje un espacio de 0px*/
+        //height:px; /*alto del div*/
+        z-index: 0;
+}
+
+div.mapa{
+    //background: rgba(163, 145, 255, 0.8);
+    background: rgba(213, 206, 248, 0.8);
+    border-radius: 12px;
+    border: 0.5px solid (rgba(212, 209, 230, 0.8));
+}

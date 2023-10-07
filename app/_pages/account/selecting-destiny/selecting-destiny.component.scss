@@ -1,0 +1,35 @@
+ ion-content.background {
+     --background: url(/assets/images/select-destiny.png)0 0/100% 50% no-repeat;
+     align-content: center;
+ }
+
+ ion-item.costo {
+    background: linear-gradient( to left,  rgb(99,84,213) 0%, rgb(171,132,237)100%);
+    height: 40px;
+    width: 300px;
+    
+}
+
+ion-item.select-destiny {
+    background: white;
+    height: 45px;
+    width: 350px;
+    border-radius: 12px;
+    left: 10px;
+    border: 0.5px solid (rgba(212, 209, 230, 0.8));
+}
+
+
+app-navegation.destino{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: -260px;
+    z-index: 0;
+}
+
+div.content{
+    background: rgba(213, 206, 248, 0.8);
+    border-radius: 12px;
+    border: 0.5px solid (rgba(212, 209, 230, 0.8));
+}

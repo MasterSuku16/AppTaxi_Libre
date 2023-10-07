@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar color="mybackground">
+    <ion-buttons>
+      <ion-back-button defaultHref="/login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+
+  <center>
+    <div>
+      <img class="img" src="{{newUser.profilePicture}}" width="150px" alt="">
+    </div>
+    <input type="file" accept=".jpg , .png" #file placeholder="Choose file" (change)="uploadFile(file.files)" multiple
+      style="display:none ;">
+    <center>
+      <ion-button class="uploadFile" color="mybackground" disable="false" (click)="file.click($event)"><b> Subir
+          archivos</b></ion-button>
+    </center>
+    
+    <ion-card>
+      <ion-label position="floating"><b>Nombre Completo</b> </ion-label>
+      <ion-input [(ngModel)]="newUser.name"></ion-input>
+    </ion-card>
+
+    <ion-card>
+      <ion-label position="floating"><b>Correo Electronico</b></ion-label>
+      <ion-input [(ngModel)]="newUser.email"></ion-input>
+    </ion-card>
+
+    <ion-card>
+      <ion-label position="floating"><b>Contraseña</b></ion-label>
+      <ion-input [(ngModel)]="newUser.password"></ion-input>
+    </ion-card>
+    <br>
+
+    <ion-button expand="block" color="mybackground" disabled="{{newUser.profilePicture==''}}" (click)="Register()">
+      <b>Registrarse</b></ion-button>
+  </center>
+</ion-content>

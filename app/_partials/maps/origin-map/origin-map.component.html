@@ -1,0 +1,17 @@
+<!-- buscador -->
+<ion-searchbar [(ngModel)]="search" (ionChange)="SearchChanged()" placeholder="Ingrese la ubicacion"></ion-searchbar>
+<!-- lista de busqueda -->
+<ion-list class="ion-margin-horizontal" [hidden]="!search.length">
+  <ion-item (click)="SelectSearchResult(item)" *ngFor="let item of searchResults">
+    {{item.description}}
+  </ion-item>
+</ion-list>
+
+<div>
+  
+  <img class="map-center" src="assets/images/marker.png" />
+
+  <capacitor-google-map #mapRef>
+
+  </capacitor-google-map>
+</div>

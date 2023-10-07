@@ -1,0 +1,29 @@
+<ion-header>
+</ion-header>
+
+<ion-content class="background">
+  <br><br>
+  <br><br><br><br> <br><br><br><br> <br><br><br>
+  <br>
+  <center>
+    <ion-card >
+      <ion-label  position="floating"><b>Correo Electronico</b></ion-label>
+      <!-- <ion-input [(ngModel)]="nickName"></ion-input> -->
+      <ion-input  [(ngModel)]="email"></ion-input>
+    </ion-card>
+
+    <ion-card  >
+      <ion-label class="lab-login" position="floating"><b>Contraseña</b></ion-label>
+      <ion-input [(ngModel)]="password"></ion-input>
+    </ion-card>
+    <br><br><br>
+
+    <ion-button   color="mybackground" (click)="login()"><b>Iniciar sesión</b></ion-button>
+    <br><br>
+    <!-- <ion-router-link href="" [routerLink]="['/register']">Registrarse</ion-router-link> -->
+
+    <ion-button class="btn-registro" color="mybackground" href="" [routerLink]="['/register']"><b>Registrarse</b></ion-button>
+    <br><br>
+    <ion-router-link   href=""  (click)="this.globaldata.GoToLinkExternal('https://policies.google.com/privacy?hl=es')"> Aviso de privacidad</ion-router-link>
+  </center>
+</ion-content>

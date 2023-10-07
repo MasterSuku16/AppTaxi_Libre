@@ -1,0 +1,24 @@
+<ionic-container>
+
+
+  <ion-item>
+    <ion-label position="floating">ID</ion-label>
+    <ion-input [(ngModel)]="user.id"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">nombre</ion-label>
+    <ion-input name="user.name" [(ngModel)]="user.name"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">nickName</ion-label>
+    <ion-input [(ngModel)]="user.nickName"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">password</ion-label>
+    <ion-input [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  <br />
+  <ion-button expand="full" (click)="SaveUser()">Save</ion-button>
+</ionic-container>

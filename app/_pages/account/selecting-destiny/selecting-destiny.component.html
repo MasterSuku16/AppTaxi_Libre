@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar color="mybackground">
+    <ion-buttons>
+      <ion-back-button defaultHref="/main"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Consultar viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content class="background">
+  <br>
+  <div id="ORIGEN">
+    <div class="content">
+      <ion-label class="Origin" color="mybackground"><b>&nbsp;&nbsp;&nbsp;Origen:</b></ion-label>
+      <br>
+      <ion-item class="select-destiny" color="mybackground" button detail detail-icon="pencil"
+        [hidden]="toogle_editar_origen" (click)="function_toogle_edicion_origen()">
+        <ion-label>{{origin_description}}</ion-label>
+      </ion-item>
+
+      <div [hidden]="!toogle_editar_origen">
+        <app-origin-map [es_destino]="false" (changeDataMap)="calcultate_trip_price($event)"></app-origin-map>
+      </div>
+    </div>
+    <center>
+      <ion-button  color="mybackground" (click)="function_toogle_edicion_origen()"><b>Confirmar origen</b> 
+      </ion-button>
+    </center>
+  </div>
+
+  <br>
+
+  <div id="DESTINO">
+    <div class="content">
+      <ion-label class="destiny" color="mybackground"><b>&nbsp;&nbsp;&nbsp;Destino:</b></ion-label>
+      <br>
+      <ion-item class="select-destiny" color="mybackground" button detail detail-icon="pencil"
+        [hidden]="toogle_editar_destino" (click)="function_toogle_edicion_destino()">
+        <ion-label>{{origin_description}}</ion-label>
+      </ion-item>
+      <div [hidden]="!toogle_editar_destino">
+        <app-origin-map [es_destino]="true" (changeDataMap)="calcultate_trip_price($event)"></app-origin-map>
+      </div>
+    </div>
+    <center>
+      <ion-button color="mybackground"  (click)="function_toogle_edicion_destino()"><b>Confirmar destino</b> 
+      </ion-button>
+    </center>
+  </div>
+
+  <br>
+
+  <center>
+    <ion-item class="costo" color="mybackground">
+      <ion-label>Costo: ${{price}} (Distancia: {{distance_in_km}}km)</ion-label>
+    </ion-item>
+    <ion-button color="mybackground"  onclick="SolicitarViaje()"> <b>Solicitar Viaje</b></ion-button>
+  </center>
+  <!-- <app-navegation class="destino"></app-navegation> -->
+
+</ion-content>

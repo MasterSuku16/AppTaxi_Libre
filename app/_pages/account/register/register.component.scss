@@ -1,0 +1,39 @@
+ion-content.background{
+    --background: url(/assets/images/fondoMejorado.png)0 0/100% 70% no-repeat;
+    align-content: center;
+}
+// .img2 {
+//     border-radius: 50%;
+// }
+
+ion-button.uploadFile{
+    background: linear-gradient( to left,  rgba(97, 80, 248, 0.464) 0%, rgb(225,224, 242,0.464)100%);
+    //background:( rgba(226, 224, 242, 0.464));
+    height: 40px;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 6px;
+    //border: 0.2px solid (rgba(225, 224, 242, 0.464));  
+    color: white;
+}
+
+ ion-label{
+    text-align: center;
+    position: fixed;
+    top: -45%;
+    left: 15px;
+    //color: rgb(56, 49, 103);
+    color: rgb(105,99,171);
+    
+}
+
+ ion-input {
+    
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 30%;
+    left: 5px;
+    color: black;
+    font-family: Yu Gothic;
+}
